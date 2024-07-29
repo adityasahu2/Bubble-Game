@@ -16,6 +16,9 @@ let menu = document.getElementById("menu")
 function RandomNumberGenerator() { return Math.ceil(Math.random() * 10) }
 
 function CreateBubble() {
+    score.textContent = 0
+    timer.textContent = 60
+    lives.textContent = 3
     for (let i = 0; i < width * height; i++) {
         let bubble = document.createElement("div")
         bubble.classList.add("bubble", "center")
