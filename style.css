@@ -79,6 +79,10 @@ body,
     transform: scale(1.1);
 }
 
+.bubble:active {
+    transform: scale(0.95);
+}
+
 #menu>h1 {
     color: #435443;
     width: 100%;
@@ -103,4 +107,8 @@ body,
 #button:hover {
     background-color: #587359;
     color: #f0fff1;
+}
+
+#button:active {
+    transform: scale(0.9)
 }
