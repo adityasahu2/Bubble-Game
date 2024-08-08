@@ -84,6 +84,12 @@ function Play() {
 }
 
 document.getElementById("button").addEventListener("click", Play)
+document.getElementById("info").addEventListener("mouseover", () => {
+    document.querySelector("#instructions").style.opacity = "1"
+})
+document.getElementById("info").addEventListener("mouseout", () => {
+    document.querySelector("#instructions").style.opacity = "0"
+})
 
 // let bubbles = document.querySelector("#game-area").children
 // for (const key in bubbles) {
